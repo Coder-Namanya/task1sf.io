@@ -402,31 +402,18 @@ html {
     color: #000;
 }
 
-/* Media Queries for Responsive Layout */
 @media (max-width: 768px) {
     .grid-container {
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(4, 200px);
-        grid-template-areas: 
-            "card1 card2"
-            "card3 card6"
-            "card4 card6";
+        display: block; /* Change grid layout to block for vertical stacking */
+    }
+
+    .skill-card {
+        width: 100%; /* Full width for each skill card */
+        margin-bottom: 20px; /* Adjust margin for spacing between cards */
     }
 }
 
-@media (max-width: 480px) {
-    .grid-container {
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(6, 200px);
-        grid-template-areas: 
-            "card1"
-            "card2"
-            "card3"
-            "card6"
-            "card4"
-            "card6";
-    }
-}
+
 
 /* Contact Section Styles */
 #contact {
