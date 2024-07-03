@@ -577,3 +577,27 @@ footer {
 .footer-bottom p a:hover {
     color: #00aaff;
 }
+
+/* Prevent horizontal scrolling */
+html, body {
+    overflow-x: hidden;
+}
+
+/* Skill Cards for Smaller Screens */
+@media (max-width: 768px) {
+    .grid-container {
+        display: block; /* Stack skill cards vertically */
+        width: 100%; /* Full width of the viewport */
+        margin: 0 auto; /* Center the container */
+        padding: 0 15px; /* Add padding to avoid touching screen edges */
+        box-sizing: border-box; /* Include padding in the width */
+    }
+
+    .skill-card {
+        width: 100%; /* Ensure full width for each card */
+        margin: 0 auto 20px; /* Center cards with spacing between them */
+        padding: 15px; /* Adjust padding for content spacing */
+        box-sizing: border-box; /* Include padding in width calculation */
+        max-width: 600px; /* Optional: Set a max width for skill cards */
+    }
+}
